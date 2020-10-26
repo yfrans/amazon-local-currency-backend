@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const axios = require('axios').default;
+const cors = require('cors');
 
 const mongoose = require('mongoose');
 
@@ -14,6 +15,8 @@ const Exchange = mongoose.model('Exchange', mongoose.Schema({
 }));
 
 mongoose.connect(process.env.MONGO_CONNECTION_STRING).then(() => {});
+
+app.use(cors());
 
 app.get('/', async (req, res) => {
     let exchange = await Exchange.findOne();
