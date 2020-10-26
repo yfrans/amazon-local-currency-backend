@@ -1,0 +1,20 @@
+{
+  "name": "amazon-local-currency-backend",
+  "version": "1.0.0",
+  "description": "Backend for Amazon-Local-Currency extension",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yfrans/amazon-local-currency-backend.git"
+  },
+  "author": "Yossi Frances",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yfrans/amazon-local-currency-backend/issues"
+  },
+  "homepage": "https://github.com/yfrans/amazon-local-currency-backend#readme"
+}
