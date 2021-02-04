@@ -37,7 +37,7 @@ app.get('/', async (req, res) => {
             });
         } else {
             exchange.last_update = new Date();
-            rates = v;
+            exchange.rates = v;
             await exchange.save();
         }
     }
